@@ -1,37 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:ital,wght@0,400;0,700;1,300&family=Titan+One&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
-html,body{
+html,
+body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     font-family: Work Sans, sans-serif;
 }
 
-header{
+header {
     background-color: rgb(255, 204, 0);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    
-}
-
-.header-left, .play {
-    width: 50%;
+    width: 100%;
     height: 100%;
+    display: flex;
+
 }
 
-.play{
+.header-left,
+.play {
+    width: 50vw;
+    height: 50vw;
+}
+
+.play {
     padding-left: 100px;
 }
 
-.header-left{
+.header-left {
     width: 50%;
     height: 100%;
     padding: 15px;
@@ -40,22 +42,111 @@ header{
     justify-content: space-between;
 }
 
-.FM, .text-header{
+.FM,
+.text-header {
     width: 50%;
     height: 50%;
 }
 
-.text-header{
+.text-header {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-h1{
+h1 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.span2{
+.span2 {
     font-size: larger;
+}
+
+
+.section1 {
+    background-color: rgb(134, 90, 151);
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.section6 {
+    background-color: rgb(255, 204, 0);
+    margin: 0;
+    width: 100vw;
+    height: 150vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+
+.marquee1 {
+    margin: 0;
+    padding: 0;
+    font-size: 200px;
+
+
+}
+
+
+.foto-section6 {
+    margin: 0;
+    padding-left: 200px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+
+}
+
+.footer-left,
+.footer-right {
+    width: 50vw;
+    height: 50vw;
+}
+
+.footer-left {
+    background-color: #660099;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-right {
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.freccia-bianco:hover {
+    animation: 0.2s linear forwards;
+}
+
+
+
+@keyframes freccia-bianco {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+
 }
