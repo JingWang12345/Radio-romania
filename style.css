@@ -33,6 +33,11 @@ header {
     padding-left: 100px;
 }
 
+.play-img{
+    width: 100%;
+    height: 100%;
+}
+
 .header-left {
     width: 50%;
     height: 100%;
@@ -129,21 +134,43 @@ footer {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
 
 }
- 
+
+.freccia-link{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+.freccia-bianco{
+    width: 100%;
+    height: 100%;
+}
+
+
+.freccia-bianco:hover {
+    animation-name: anim-hover;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+  
+    animation-timing-function: ease-in-out;
+}
 
 
 
-@keyframes freccia-bianco {
+@keyframes anim-hover {
 
     0% {
         transform: rotate(0deg);
+        opacity: 1;
     }
 
     100% {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
+        opacity: 1;
     }
 
 }
